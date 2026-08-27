@@ -114,10 +114,11 @@ Al iniciar verás el banner de bienvenida y se te pedirá el dominio a analizar:
 
 ## 👤 Créditos
 
-|                   |                                                 |
-| ------------------ | ----------------------------------------------- |
-| 🧑‍💻 **Creador**    | Spyk3r                                          |
-| 🐙 **GitHub**       | [github.com/Spyk3r](https://github.com/Spyk3r)  |
+|||
+|-|-|
+|🧑‍💻 **Creador**|Spyk3r|
+|🐙 **GitHub**|[github.com/Spyk3r](https://github.com/Spyk3r)|
+|💬 **Discord**|spyk3r|
 
 <div align="center">
 
