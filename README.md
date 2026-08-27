@@ -115,4 +115,8 @@ Al iniciar verás el banner de bienvenida y se te pedirá el dominio a analizar:
 | 🧑‍💻 **Creador**    | Spyk3r                                          |
 | 🐙 **GitHub**       | [github.com/Spyk3r](https://github.com/Spyk3r)  |
 
+<div align="center">
+
 Hecho con 🖤 por **Spyk3r**
+
+</div>
