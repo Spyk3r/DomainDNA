@@ -1,4 +1,8 @@
+<div align="center">
+
 ![DomainDNA](assets/banner.png)
+
+</div>
 
 ### 🧬 Escáner de Inteligencia de Dominios OSINT
 
