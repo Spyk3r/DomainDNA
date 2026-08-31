@@ -11,125 +11,6 @@
 
 </div>
 
-# English
-
-## 📖 Description
-
-**DomainDNA** is a domain reconnaissance tool that maps all the public "genetic information" of a website: its DNS records, its web behavior, its TLS certificate, and its security headers.
-
-🧬 All the analysis is displayed in clear, colored tables in the terminal, accompanied by a spinning **DNA double helix** animation that runs in the background while the scan is in progress.
-
-The scan combines asynchronous requests (DNS + HTTP/HTTPS in parallel) with a direct socket-based TLS check, so results arrive quickly even when analyzing several aspects of the domain at once.
-
-> ⚠️ **Responsible use:** DomainDNA only queries public information (DNS, HTTP headers, and the TLS certificate exposed by the server itself). It does not exploit vulnerabilities or perform any kind of intrusion.
-
-## ✨ Features
-
-|     |                                                                          |
-| --- | ------------------------------------------------------------------------ |
-| 🌐  | DNS record resolution (A, AAAA, MX, NS, TXT, CNAME)                      |
-| 🕵️  | Web intelligence: HTTP/HTTPS status, server, and Content-Type            |
-| 🔐  | TLS certificate reading (subject, issuer, expiration, days remaining)    |
-| 🛡️  | Security score based on headers (HSTS, CSP, X-Frame-Options...)          |
-| ⚡  | Parallel DNS + Web scanning with `asyncio` for faster results            |
-| 🧬  | Custom looping DNA double helix animation while scanning                 |
-| 📦  | Export results to JSON with a single confirmation (Y/N)                  |
-| 🎨  | Fully Spanish-language terminal interface, colored with `rich`           |
-
-## 🖼️ Screenshots
-
-**Scan animation**
-
-![DomainDNA DNA animation](assets/screenshot_dna.png)
-
-**Scan result**
-
-![Domain scan result](assets/screenshot_scan.png)
-
-## ⚙️ Installation
-
-```
-git clone https://github.com/Spyk3r/DomainDNA.git
-cd DomainDNA
-pip install -r requirements.txt
-```
-
-### Requirements
-
-- 🐍 Python 3.9 or higher
-- 📦 Dependencies listed in `requirements.txt`:
-  - `rich`
-  - `httpx`
-  - `dnspython`
-
-## 🚀 Usage
-
-```
-python3 domaindna.py
-```
-
-On Windows:
-
-```
-python domaindna.py
-```
-
-On startup you'll see the welcome banner and be asked for the domain to analyze:
-
-1. 🧬 Enter the domain (e.g. `example.com`).
-2. 🔄 DomainDNA launches the DNS, web, and TLS scans in parallel, showing the double helix animation while it works.
-3. 📊 When finished, the result tables are printed: DNS, network, web, TLS, and security headers.
-4. 💾 At the end you'll be asked `Export results to JSON? (y/N)`, where you can answer `y` / `n` (or leave it empty to use the default value).
-
-## 🧠 Information it collects
-
-**🌐 DNS**
-
-- A / AAAA records (IPv4 and IPv6 addresses)
-- MX records (mail servers)
-- NS records (name servers)
-- TXT and CNAME records
-
-**🕵️ Web**
-
-- HTTP and HTTPS status code
-- `Server` and `Content-Type` headers
-- Security headers present: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy
-
-**🔐 TLS / Certificate**
-
-- Certificate subject (Common Name) and issuer
-- Expiration date and days remaining
-
-**🛡️ Security score**
-
-- Score from 0 to 100 calculated from active HTTPS and the security headers present
-
-## 🧪 Compatibility
-
-- ✅ Windows 10 / 11 (Windows Terminal / PowerShell)
-- ✅ Linux (any distro with Python 3.9+)
-- ✅ macOS
-- ✅ Termux (Android)
-
-> The DNA animation and colors require a terminal with UTF-8 support. If your terminal doesn't display some characters correctly, try Windows Terminal, iTerm2, or any modern terminal.
-
-## 👤 Credits
-
-|||
-|-|-|
-|🧑‍💻 **Creator**|Spyk3r|
-|🐙 **GitHub**|[github.com/Spyk3r](https://github.com/Spyk3r)|
-|💬 **Discord**|spyk3r|
-
-<div align="center">
-
-Made with 🖤 by **Spyk3r**
-
-</div>
-
----
-
 # Español
 
 ## 📖 Descripción
@@ -244,5 +125,124 @@ Al iniciar verás el banner de bienvenida y se te pedirá el dominio a analizar:
 <div align="center">
 
 Hecho con 🖤 por **Spyk3r**
+
+</div>
+
+---
+
+# English
+
+## 📖 Description
+
+**DomainDNA** is a domain reconnaissance tool that maps all the public "genetic information" of a website: its DNS records, its web behavior, its TLS certificate, and its security headers.
+
+🧬 All the analysis is displayed in clear, colored tables in the terminal, accompanied by a spinning **DNA double helix** animation that runs in the background while the scan is in progress.
+
+The scan combines asynchronous requests (DNS + HTTP/HTTPS in parallel) with a direct socket-based TLS check, so results arrive quickly even when analyzing several aspects of the domain at once.
+
+> ⚠️ **Responsible use:** DomainDNA only queries public information (DNS, HTTP headers, and the TLS certificate exposed by the server itself). It does not exploit vulnerabilities or perform any kind of intrusion.
+
+## ✨ Features
+
+|     |                                                                          |
+| --- | ------------------------------------------------------------------------ |
+| 🌐  | DNS record resolution (A, AAAA, MX, NS, TXT, CNAME)                      |
+| 🕵️  | Web intelligence: HTTP/HTTPS status, server, and Content-Type            |
+| 🔐  | TLS certificate reading (subject, issuer, expiration, days remaining)    |
+| 🛡️  | Security score based on headers (HSTS, CSP, X-Frame-Options...)          |
+| ⚡  | Parallel DNS + Web scanning with `asyncio` for faster results            |
+| 🧬  | Custom looping DNA double helix animation while scanning                 |
+| 📦  | Export results to JSON with a single confirmation (Y/N)                  |
+| 🎨  | Fully Spanish-language terminal interface, colored with `rich`           |
+
+## 🖼️ Screenshots
+
+**Scan animation**
+
+![DomainDNA DNA animation](assets/screenshot_dna.png)
+
+**Scan result**
+
+![Domain scan result](assets/screenshot_scan.png)
+
+## ⚙️ Installation
+
+```
+git clone https://github.com/Spyk3r/DomainDNA.git
+cd DomainDNA
+pip install -r requirements.txt
+```
+
+### Requirements
+
+- 🐍 Python 3.9 or higher
+- 📦 Dependencies listed in `requirements.txt`:
+  - `rich`
+  - `httpx`
+  - `dnspython`
+
+## 🚀 Usage
+
+```
+python3 domaindna.py
+```
+
+On Windows:
+
+```
+python domaindna.py
+```
+
+On startup you'll see the welcome banner and be asked for the domain to analyze:
+
+1. 🧬 Enter the domain (e.g. `example.com`).
+2. 🔄 DomainDNA launches the DNS, web, and TLS scans in parallel, showing the double helix animation while it works.
+3. 📊 When finished, the result tables are printed: DNS, network, web, TLS, and security headers.
+4. 💾 At the end you'll be asked `Export results to JSON? (y/N)`, where you can answer `y` / `n` (or leave it empty to use the default value).
+
+## 🧠 Information it collects
+
+**🌐 DNS**
+
+- A / AAAA records (IPv4 and IPv6 addresses)
+- MX records (mail servers)
+- NS records (name servers)
+- TXT and CNAME records
+
+**🕵️ Web**
+
+- HTTP and HTTPS status code
+- `Server` and `Content-Type` headers
+- Security headers present: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy
+
+**🔐 TLS / Certificate**
+
+- Certificate subject (Common Name) and issuer
+- Expiration date and days remaining
+
+**🛡️ Security score**
+
+- Score from 0 to 100 calculated from active HTTPS and the security headers present
+
+## 🧪 Compatibility
+
+- ✅ Windows 10 / 11 (Windows Terminal / PowerShell)
+- ✅ Linux (any distro with Python 3.9+)
+- ✅ macOS
+- ✅ Termux (Android)
+
+> The DNA animation and colors require a terminal with UTF-8 support. If your terminal doesn't display some characters correctly, try Windows Terminal, iTerm2, or any modern terminal.
+
+## 👤 Credits
+
+|||
+|-|-|
+|🧑‍💻 **Creator**|Spyk3r|
+|🐙 **GitHub**|[github.com/Spyk3r](https://github.com/Spyk3r)|
+|💬 **Discord**|spyk3r|
+
+<div align="center">
+
+Made with 🖤 by **Spyk3r**
 
 </div>
