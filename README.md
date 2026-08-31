@@ -124,7 +124,7 @@ On startup you'll see the welcome banner and be asked for the domain to analyze:
 
 <div align="center">
 
-Made with love by **Spyk3r**
+Made with 🖤 by **Spyk3r**
 
 </div>
 
@@ -243,6 +243,6 @@ Al iniciar verás el banner de bienvenida y se te pedirá el dominio a analizar:
 
 <div align="center">
 
-Hecho con dedicación por **Spyk3r**
+Hecho con 🖤 por **Spyk3r**
 
 </div>
